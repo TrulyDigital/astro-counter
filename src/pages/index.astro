@@ -1,0 +1,30 @@
+---
+import '../styles/global.css';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Counter</title>
+	</head>
+	<body>
+		<h1>Counter</h1>
+		<section class="_counter_container">
+			<span class="_counter" id="idCounter">
+				0
+			</span>
+		</section>
+		<section class="_counter_actions">
+			<button class="_button_enable" id="idButtonLess">
+				less
+			</button>
+			<button class="_button_enable" id="idButtonMore">
+				more
+			</button>
+		</section>
+		<script src="./Counter.ts"></script>
+	</body>
+</html>
