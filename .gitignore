@@ -12,6 +12,9 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# vscode
+.vscode
+.vscode/
 
 # environment variables
 .env
@@ -22,3 +25,11 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# tests
+.scannerwork
+.scannerwork/
+.nyc_output
+.nyc_output/
+coverage
+coverage/

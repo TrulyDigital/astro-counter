@@ -1,14 +1,18 @@
-h1{
+._counter_title{
   @apply
   flex 
   justify-center
+  font-bold
+  text-2xl
 }
 
 ._counter_container{
   @apply
   bg-pink-500
   w-11/12
+  md:w-[600px]
   h-48
+  mt-2
   flex
   justify-center
   items-center
@@ -30,6 +34,7 @@ h1{
   gap-4
   place-content-center
   w-11/12
+  md:w-[600px]
   m-auto
   mt-4
 }

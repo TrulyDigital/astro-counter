@@ -7,7 +7,11 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "test:e2e": "npx cypress run",
+    "test:coverage": "nyc --reporter=lcov --reporter=text --reporter=text-summary cypress run",
+    "test:cypress": "npx cypress open",
+    "test:sonar-scanner": "sonar-scanner"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.3",
@@ -15,5 +19,19 @@
     "astro": "^4.15.3",
     "tailwindcss": "^3.4.10",
     "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@cypress/code-coverage": "^3.12.47",
+    "@istanbuljs/nyc-config-typescript": "^1.0.2",
+    "babel-plugin-istanbul": "^7.0.0",
+    "cypress": "^13.14.2",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-multi-reporters": "^1.6.4",
+    "istanbul-lib-coverage": "^3.2.2",
+    "mocha-junit-reporter": "^2.2.1",
+    "nyc": "^17.0.0",
+    "sonarqube-scanner": "^4.2.2",
+    "ts-node": "^10.9.2",
+    "vite-plugin-istanbul": "^6.0.2"
   }
 }

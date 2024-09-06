@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.592" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-09-06T18:31:59" tests="0" file="cypress\e2e\index.test.cy.ts" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Page - index.astro" timestamp="2024-09-06T18:31:59" tests="1" time="0.550" failures="0">
+    <testcase name="Page - index.astro #idButtonMore - disable" time="0.244" classname="#idButtonMore - disable">
+    </testcase>
+  </testsuite>
+</testsuites>

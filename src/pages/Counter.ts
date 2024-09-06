@@ -29,14 +29,13 @@ type CounterObserver = {
  * Create a Button More Observer
  * 
  */
-function createButtonMoreObserver(
+export function createButtonMoreObserver(
   buttonMore: HTMLButtonElement
 ): CounterObserver{
 
   let isDisable: boolean = false;
   
   function update(state: CounterStateType): void{
-    console.log(`buttonMore: He recibido el estado: ${state.counter}`);
     enable_and_disable_button(state);
   }
 
@@ -76,7 +75,6 @@ function createButtonLessObserver(
   let isDisable: boolean = false;
 
   function update(state: CounterStateType): void{
-    console.log(`buttonLess: He recibido el estado: ${state.counter}`);
     enable_and_disable_button(state);
   }
 
@@ -109,12 +107,11 @@ function createButtonLessObserver(
  * Create a Span Counter Observer
  * 
  */
-function createSpanCounterObserver(
+export function createSpanCounterObserver(
   spanCounter: HTMLSpanElement,
 ): CounterObserver{
 
   function update(state: CounterStateType): void{
-    console.log(`spanCounter: He recibido el estado: ${state.counter}`);
     updateTextCounter(state);
   }
 
@@ -144,7 +141,7 @@ type CounterObservable = {
   handlerDecrement: () => void;
 }
 
-function createCounterObservable(): CounterObservable{
+export function createCounterObservable(): CounterObservable{
 
   // state
   const state: CounterStateType = {
